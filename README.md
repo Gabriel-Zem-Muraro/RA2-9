@@ -214,14 +214,6 @@ Escolha uma opção: 5
 6. Executar o programa novamente
 7. Escolher opção "4. Listar Todos os Itens"
 
-**Resultado Esperado:**
-- Arquivos criados com sucesso
-- Ao reiniciar, o sistema exibe: "✓ Inventário carregado: 13 itens"
-- A listagem mostra os 10 itens iniciais + os 3 adicionados
-- Todas as quantidades estão corretas
-
-**Status:** ✅ **PASSOU**
-
 ---
 
 ### Cenário 2: Erro de Lógica (Estoque Insuficiente)
@@ -235,17 +227,6 @@ Escolha uma opção: 5
 4. Observar a mensagem de erro
 5. Escolher opção "4. Listar Todos os Itens" e verificar a quantidade de WEBC001
 6. Escolher opção "5. Relatórios" → "2. Logs de Erro"
-
-**Resultado Esperado:**
-- Sistema exibe: "✗ Erro: Estoque insuficiente. Disponível: 8, Solicitado: 15"
-- A listagem mostra que WEBC001 ainda tem 8 unidades (não foi alterado)
-- O arquivo `Inventario.dat` não foi modificado
-- O arquivo `Auditoria.log` contém uma entrada com:
-  - acao: Remove
-  - status: Falha "Erro: Estoque insuficiente..."
-  - detalhes: "Tentativa falha de remover do item ID: WEBC001"
-
-**Status:** ✅ **PASSOU**
 
 ---
 
@@ -262,16 +243,6 @@ Escolha uma opção: 5
 2. Escolher opção "5. Relatórios" → "2. Logs de Erro"
 3. Analisar o relatório gerado
 
-**Resultado Esperado:**
-- O relatório "RELATÓRIO DE ERROS" exibe todas as 4+ falhas registradas
-- Cada entrada mostra:
-- Número sequencial
-  - Tipo de ação [Add], [Remove] ou [Update]
-  - Detalhes da operação
-  - Motivo da falha
-- O total de erros é contabilizado corretamente
-- Todas as falhas do Cenário 2 também aparecem
-
 **Exemplo de Saída:**
 ```
 === RELATÓRIO DE ERROS ===
@@ -287,8 +258,6 @@ Escolha uma opção: 5
 
 Total de erros: 3
 ```
-
-**Status:** ✅ **PASSOU**
 
 ---
 
