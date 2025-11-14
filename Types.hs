@@ -10,3 +10,18 @@ data Item = Item
   , quantidade :: Int
   , categoria  :: String
   } deriving (Show, Read, Eq)
+
+type Inventario = Map String Item
+
+data AcaoLog
+  = Add
+  | Remove
+  | Update
+  | QueryFail
+  deriving (Show, Read, Eq)
+
+data StatusLog
+-- terminar
+
+data LogEntry = LogEntry
+-- terminar tbm
