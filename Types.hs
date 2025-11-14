@@ -21,7 +21,15 @@ data AcaoLog
   deriving (Show, Read, Eq)
 
 data StatusLog
--- terminar
+  = Sucesso
+  | Falha String
+  deriving (Show, Read, Eq)
 
 data LogEntry = LogEntry
--- terminar tbm
+  { timestamp :: UTCTime
+  , acao      :: AcaoLog
+  , detalhes  :: String
+  , status    :: StatusLog
+  } deriving (Show, Read, Eq)
+
+type ResultadoOperacao = (Inventario, LogEntry)
