@@ -23,7 +23,7 @@
 ## 🔗 Links Importantes
 
 - **Executar o Projeto:** [Link do OnlineGDB](https://onlinegdb.com/EG2Yvb99S) 
-- **Repositório GitHub:** [Link do Repositório](https://github.com/Gabriel-Zem-Muraro/Iventario-RA2.git) 
+- **Repositório GitHub:** [Link do Repositório](https://github.com/Gabriel-Zem-Muraro/RA2-9) 
 
 ---
 
