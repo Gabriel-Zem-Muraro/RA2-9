@@ -10,9 +10,9 @@
 ### Integrantes do Grupo (Ordem Alfabética)
 
 1. **André Esteves Arantes** - GitHub: [@DJoverdant](https://github.com/DJoverdant)
-   - Responsável por: Types.hs
+   - Responsável por: Types.hs e README.md
 
-2. **Fernando Aschwanden** - GitHub: [@Fer604](https://github.com/Fer604)
+2. **Fernando Aschwanden Soviersovski** - GitHub: [@Fer604](https://github.com/Fer604)
    - Responsável por: Logic.hs e Reports.hs 
 
 3. **Gabriel Zem Muraro** - GitHub: [@Gabriel-Zem-Muraro](https://github.com/Gabriel-Zem-Muraro)
@@ -20,14 +20,13 @@
 
 ---
 
-## 🔗 Links Importantes
+## Link para execução
 
 - **Executar o Projeto:** [Link do OnlineGDB](https://onlinegdb.com/EG2Yvb99S) 
-- **Repositório GitHub:** [Link do Repositório](https://github.com/Gabriel-Zem-Muraro/RA2-9) 
 
 ---
 
-## 📋 Descrição do Projeto
+## Descrição do Projeto
 
 Este é um sistema de gerenciamento de inventário desenvolvido em Haskell que demonstra conceitos fundamentais de programação funcional, incluindo:
 
@@ -52,7 +51,7 @@ População automática com 10 itens na primeira execução
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 O projeto está dividido em 4 módulos principais:
 
@@ -98,7 +97,7 @@ Gerencia toda a interação com o usuário e sistema de arquivos:
 - População automática na primeira execução
 
 
-## 🎮 Guia de Uso
+## Guia de Uso
 
 ### Menu Principal
 
@@ -197,7 +196,7 @@ Escolha uma opção: 5
 
 ---
 
-## 🧪 Cenários de Teste Executados
+## Cenários de Teste Executados
 
 ### Cenário 1: Persistência de Estado (Sucesso)
 
@@ -293,7 +292,7 @@ Total de erros: 3
 
 ---
 
-## 📊 Dados de Teste Iniciais
+## Dados de Teste Iniciais
 
 O sistema é automaticamente populado com 10 itens na primeira execução:
 
@@ -312,7 +311,7 @@ O sistema é automaticamente populado com 10 itens na primeira execução:
 
 ---
 
-## 📁 Arquivos de Persistência
+## Arquivos de Persistência
 
 O sistema cria dois arquivos automaticamente:
 
@@ -330,7 +329,7 @@ Contém o histórico completo de todas as operações (sucessos e falhas) em mod
 
 ---
 
-## 🎯 Conceitos de Programação Funcional Aplicados
+## Conceitos de Programação Funcional Aplicados
 
 ### Funções Puras
 Todas as funções em `Logic.hs` e `Reports.hs` são puras:
@@ -404,7 +403,7 @@ case addItem timestamp id nome qtd cat inv of
 
 ---
 
-## 🐛 Tratamento de Erros
+## Tratamento de Erros
 
 O sistema implementa dois níveis de tratamento de erros:
 
@@ -424,7 +423,7 @@ Exceções tratadas:
 
 ---
 
-## 📖 Como Entender o Código (Para Iniciantes)
+## Como Entender o Código (Para Iniciantes)
 
 ### O que é uma Entity?
 Uma **entity** (entidade) representa algo do mundo real. No nosso sistema, `Item` é uma entity:
@@ -461,17 +460,6 @@ getCurrentTime :: IO UTCTime
 
 ---
 
-
-
----
-
-## 📞 Suporte
-
-Em caso de dúvidas sobre o código, consulte os comentários nos arquivos fonte ou entre em contato com os membros do grupo através do GitHub.
-
----
-
-## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos como parte da disciplina de Programação Lógica e Funcional.
 
