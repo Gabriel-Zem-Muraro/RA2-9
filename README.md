@@ -366,7 +366,7 @@ case addItem timestamp id nome qtd cat inv of
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Linguagem:** Haskell (GHC 8.10+)
 - **Estruturas de Dados:** Data.Map (para o inventário)
@@ -376,7 +376,7 @@ case addItem timestamp id nome qtd cat inv of
 
 ---
 
-## 📝 Divisão de Tarefas
+## Divisão de Tarefas
 
 ### Aluno 1 - Arquiteto de Dados
 - Definição de todos os tipos (`Item`, `Inventario`, `AcaoLog`, `StatusLog`, `LogEntry`)
@@ -460,10 +460,4 @@ getCurrentTime :: IO UTCTime
 
 ---
 
-
 Este projeto foi desenvolvido para fins acadêmicos como parte da disciplina de Programação Lógica e Funcional.
-
----
-
-**Desenvolvido com ❤️ em Haskell**
-
