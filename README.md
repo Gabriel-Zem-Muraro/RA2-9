@@ -216,10 +216,10 @@ Escolha uma opção: 5
 7. Escolher opção "4. Listar Todos os Itens"
 
 **Resultado Esperado:**
-- ✅ Arquivos criados com sucesso
-- ✅ Ao reiniciar, o sistema exibe: "✓ Inventário carregado: 13 itens"
-- ✅ A listagem mostra os 10 itens iniciais + os 3 adicionados
-- ✅ Todas as quantidades estão corretas
+- Arquivos criados com sucesso
+- Ao reiniciar, o sistema exibe: "✓ Inventário carregado: 13 itens"
+- A listagem mostra os 10 itens iniciais + os 3 adicionados
+- Todas as quantidades estão corretas
 
 **Status:** ✅ **PASSOU**
 
@@ -238,10 +238,10 @@ Escolha uma opção: 5
 6. Escolher opção "5. Relatórios" → "2. Logs de Erro"
 
 **Resultado Esperado:**
-- ✅ Sistema exibe: "✗ Erro: Estoque insuficiente. Disponível: 8, Solicitado: 15"
-- ✅ A listagem mostra que WEBC001 ainda tem 8 unidades (não foi alterado)
-- ✅ O arquivo `Inventario.dat` não foi modificado
-- ✅ O arquivo `Auditoria.log` contém uma entrada com:
+- Sistema exibe: "✗ Erro: Estoque insuficiente. Disponível: 8, Solicitado: 15"
+- A listagem mostra que WEBC001 ainda tem 8 unidades (não foi alterado)
+- O arquivo `Inventario.dat` não foi modificado
+- O arquivo `Auditoria.log` contém uma entrada com:
   - acao: Remove
   - status: Falha "Erro: Estoque insuficiente..."
   - detalhes: "Tentativa falha de remover do item ID: WEBC001"
@@ -264,14 +264,14 @@ Escolha uma opção: 5
 3. Analisar o relatório gerado
 
 **Resultado Esperado:**
-- ✅ O relatório "RELATÓRIO DE ERROS" exibe todas as 4+ falhas registradas
-- ✅ Cada entrada mostra:
-  - Número sequencial
+- O relatório "RELATÓRIO DE ERROS" exibe todas as 4+ falhas registradas
+- Cada entrada mostra:
+- Número sequencial
   - Tipo de ação [Add], [Remove] ou [Update]
   - Detalhes da operação
   - Motivo da falha
-- ✅ O total de erros é contabilizado corretamente
-- ✅ Todas as falhas do Cenário 2 também aparecem
+- O total de erros é contabilizado corretamente
+- Todas as falhas do Cenário 2 também aparecem
 
 **Exemplo de Saída:**
 ```
@@ -380,27 +380,27 @@ case addItem timestamp id nome qtd cat inv of
 ## 📝 Divisão de Tarefas
 
 ### Aluno 1 - Arquiteto de Dados
-- ✅ Definição de todos os tipos (`Item`, `Inventario`, `AcaoLog`, `StatusLog`, `LogEntry`)
-- ✅ Garantia de derivação correta de `Show` e `Read`
-- ✅ Documentação dos tipos
+- Definição de todos os tipos (`Item`, `Inventario`, `AcaoLog`, `StatusLog`, `LogEntry`)
+- Garantia de derivação correta de `Show` e `Read`
+- Documentação dos tipos
 
 ### Aluno 2 - Lógica de Negócio
-- ✅ Implementação de `addItem` com validações
-- ✅ Implementação de `removeItem` com validações
-- ✅ Implementação de `updateItem` com validações
-- ✅ Implementação de `updateQty` (alias conforme especificação)
-- ✅ Uso correto de `Either` para tratamento de erros
-- ✅ Funções 100% puras (sem I/O)
+- Implementação de `addItem` com validações
+- Implementação de `removeItem` com validações
+- Implementação de `updateItem` com validações
+- Implementação de `updateQty` (alias conforme especificação)
+- Uso correto de `Either` para tratamento de erros
+- Funções 100% puras (sem I/O)
 
 ### Aluno 3 - I/O, Relatórios e Documentação
-- ✅ Implementação do `main` e loop interativo
-- ✅ Persistência (`writeFile`, `appendFile`)
-- ✅ Tratamento de exceções com `catch`
-- ✅ Funções de análise (`historicoPorItem`, `logsDeErro`, `itemMaisMovimentado`)
-- ✅ Menu interativo completo
-- ✅ População automática dos 10 itens
-- ✅ Este README.md
-- ✅ Execução e documentação dos cenários de teste
+- Implementação do `main` e loop interativo
+- Persistência (`writeFile`, `appendFile`)
+- Tratamento de exceções com `catch`
+- Funções de análise (`historicoPorItem`, `logsDeErro`, `itemMaisMovimentado`)
+- Menu interativo completo
+- População automática dos 10 itens
+- Este README.md
+- Execução e documentação dos cenários de teste
 
 ---
 
@@ -409,18 +409,18 @@ case addItem timestamp id nome qtd cat inv of
 O sistema implementa dois níveis de tratamento de erros:
 
 ### 1. Erros de Lógica de Negócio (Either)
-Validações implementadas:
-- ✅ ID duplicado ao adicionar
-- ✅ Item não encontrado ao remover/atualizar
-- ✅ Estoque insuficiente ao remover
-- ✅ Campos vazios
-- ✅ Quantidade negativa
+- Validações implementadas:
+- ID duplicado ao adicionar
+- Item não encontrado ao remover/atualizar
+- Estoque insuficiente ao remover
+- Campos vazios
+- Quantidade negativa
 
 ### 2. Erros de I/O (catch)
 Exceções tratadas:
-- ✅ Arquivo não existe (primeira execução)
-- ✅ Erro de leitura de arquivo
-- ✅ Arquivo corrompido (read falha)
+- Arquivo não existe (primeira execução)
+- Erro de leitura de arquivo
+- Arquivo corrompido (read falha)
 
 ---
 
